@@ -1,7 +1,7 @@
 # Expense Manager App - README
 
 ## Overview
-The **Expense Manager App** is an Android application developed using Java, XML, and SQLite database for managing personal finances. This app allows users to track their income, expenses, and balance. Users can easily add, update, delete, and view financial transactions with an intuitive user interface.
+The **Expense Manager App** is an Android application developed using Java, XML, and SQLite database for managing personal finances. This app allows users to track their income, expenses, and balance. Users can easily add, update and view financial transactions with an intuitive user interface.
 
 ---
 
@@ -10,9 +10,7 @@ The **Expense Manager App** is an Android application developed using Java, XML,
 - **Secure Login**: Protect access to the app using a secure login feature to safeguard your financial data.
 - **View Detailed Reports**: Users can analyze their financial data with interactive pie charts, providing a visual representation of income and expenses by category.
 - **View Transactions**: Users can view their transaction history with details of date, amount, category, and description.
-- **Update and Delete Transactions**: Users can update or delete previously recorded transactions.
-- **Category-Based Sorting**: Transactions can be filtered by category to get a better view of spending patterns.
-- **Balance Calculation**: The app calculates the total balance based on income and expenses.
+- **Update and Transactions**: Users can update previously recorded transactions.
 - **SQLite Database**: Transactions are stored securely in an SQLite database.
 
 ---
@@ -59,10 +57,7 @@ Before using this app, ensure you have the following:
 
 ### Transaction Details:
 - Tap any transaction in the list to view more details.
-- You can update or delete transactions from this screen.
-
-### Filters:
-- Use the category filters to view transactions of specific types (e.g., Food, Transport, Income).
+- You can update transactions from this screen.
 
 ### Secure Login:
 - The app requires users to log in with a secure username and password to access their data.
@@ -128,7 +123,8 @@ The app uses a local SQLite database to store transaction data. The database has
 - `DatabaseHelper.java`: Handles SQLite operations, such as table creation and data queries.
 
 ### 5. **Model Classes:**
-- `Transaction.java`: A model class that represents a single transaction, including its properties (amount, description, category, date).
+- `ExpenseModel.java`: A model class that represents a single Expanse, including its properties (amount, description, category, date).
+- `IncomeModel.java`: A model class that represents a single Income, including its properties (amount, description, category, date).
 
 ### 6. **Utilities:**
 - `PieChartIncome.java` and `PieChartExpense.java`: Generate pie charts for visualizing income and expense data.
@@ -136,7 +132,7 @@ The app uses a local SQLite database to store transaction data. The database has
 ---
 
 ## Future Enhancements
-- **Cloud Sync**: Sync data with cloud storage for backup and multi-device access.
+- **Cloud Sync**: Sync data with cloud storage for backup and multi-device access with help of Firebase.
 - **Budget Tracker**: Implement a feature to track budgets for different categories.
 
 ---
@@ -153,5 +149,22 @@ This project is open-source. Feel free to use, modify, and distribute it.
 
 ---
 
-For any issues or contributions, feel free to open an issue or pull request in the GitHub repository.
+## Sample ScreenShorts of App
+**1) Log in Page :-**
+![image](https://github.com/user-attachments/assets/f374d2c9-8237-40e2-aff5-4a357b46c521)
 
+**2) Home /Dashboard Page :-**
+![image](https://github.com/user-attachments/assets/605e7070-73d4-434d-88ca-5423f0d2c3dc)
+
+**3) Add Income Page :-**
+![image](https://github.com/user-attachments/assets/76fd3242-93a4-4612-9c12-2f1df53d9042)
+
+**4) Income Page :-**
+![image](https://github.com/user-attachments/assets/56a6bbac-1299-4774-8e5c-16646082587a)
+
+**5) Income Report page (In Pie Chart) :-**
+![image](https://github.com/user-attachments/assets/adea09d3-4291-446a-b9f6-43d6f1c823e9)
+
+---
+
+For any issues or contributions, feel free to open an issue or pull request in the GitHub repository.
