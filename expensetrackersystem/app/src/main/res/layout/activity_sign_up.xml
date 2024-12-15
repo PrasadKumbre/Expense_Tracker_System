@@ -1,0 +1,89 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <!-- Expense Manager Heading -->
+    <TextView
+        android:id="@+id/tvExpenseManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense Manager"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:src="@drawable/logo"
+        android:tint="@android:color/white"
+        android:layout_gravity="center"
+        android:scaleX="4"
+        android:scaleY="4"
+        android:layout_marginBottom="40sp"
+        />
+
+
+    <!-- Expense Manager Heading -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Account"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/etUsernameSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:background="@drawable/input_background"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPasswordSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Navigate to Login Page Button -->
+    <Button
+        android:id="@+id/btnNavigateToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Login"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

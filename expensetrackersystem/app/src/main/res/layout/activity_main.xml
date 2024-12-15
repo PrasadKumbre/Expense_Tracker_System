@@ -1,0 +1,96 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <!-- Expense Manager Heading -->
+    <TextView
+        android:id="@+id/tvExpenseManagerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expense Manager"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="24dp" />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:src="@drawable/logo"
+        android:tint="@android:color/white"
+        android:layout_gravity="center"
+        android:scaleX="4"
+        android:scaleY="4"
+        android:layout_marginBottom="40sp"
+
+       />
+
+    <!-- Expense Manager Heading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/etUsernameLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:background="@drawable/input_background"
+        android:layout_marginBottom="8dp"
+        />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/etPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:layout_marginBottom="16dp"
+        />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@drawable/button_rounded"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Sign Up Text -->
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign Up"
+        android:layout_marginTop="16dp"
+        android:textColor="#03A9F4"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:gravity="center"
+        android:focusable="true" />
+</LinearLayout>
